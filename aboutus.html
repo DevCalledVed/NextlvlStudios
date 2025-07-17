@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Vision & Mission</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Override emoji styling so emojis render in their native color */
+        .emoji {
+            background: none !important;
+            -webkit-background-clip: initial !important;
+            -webkit-text-fill-color: initial !important;
+            color: initial !important;
+        }
+
+        /* Additional journey content spacing and animations */
+        .journey-content {
+            line-height: 2; /* Increased line spacing */
+            animation: fadeInUp 1s ease-out, pulseAnimation 2s infinite;
+        }
+
+        @keyframes pulseAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        /* More animations for section headers */
+        .about-hero h1,
+        .mission-vision h2,
+        .values-section h2,
+        .journey-section h2 {
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Sliding upward animation for cards */
+        .vision-card,
+        .mission-card,
+        .value-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUpPop 0.8s ease-out forwards;
+        }
+
+        .vision-card {
+            animation-delay: 0.2s;
+        }
+
+        .mission-card {
+            animation-delay: 0.4s;
+        }
+
+        .value-card:nth-child(1) {
+            animation-delay: 0.6s;
+        }
+
+        .value-card:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+
+        .value-card:nth-child(3) {
+            animation-delay: 1.0s;
+        }
+
+        @keyframes slideUpPop {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            70% {
+                opacity: 1;
+                transform: translateY(-5px) scale(1.02);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Styling for the special note to enhance appearance */
+        .special-note {
+            margin: 20px 0;
+            padding: 15px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--primary-gradient);
+            border-radius: 8px;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .special-note b {
+            font-style: normal;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html" onclick="window.location.href='index.html'">Home</a></li>
+                <li><a href="aboutus.html" onclick="window.location.href='aboutus.html'">About Us</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html" class="contact" onclick="window.location.href = 'contact.html';">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <section class="about-hero">
+            <h1>About Us <span class="emoji">💼</span></h1>
+            <p>We’re a team of experienced investors, marketing, and industry professionals with a passion for turning great ideas into games.
+                We don't just help with Marketing and Management; we invest ourselves, helping bring the best Roblox projects to life.</p>
+        </section>
+
+        <section class="about-content">
+            <div class="mission-vision">
+                <div class="vision-card">
+                    <h2><span class="emoji">💡</span> What We Do</h2>
+                    <ul>
+                        <li><span class="emoji">💰</span> Acquire % throughout promising Roblox games <span class="emoji">💰</span></li>
+                        <li><span class="emoji">🔥</span> Offer expert game development guidance <span class="emoji">🔥</span></li>
+                        <li><span class="emoji">💼</span> Provide marketing & management support <span class="emoji">💼</span></li>
+                        <li><span class="emoji">📈</span> Help creators scale their games to success <span class="emoji">📈</span></li>
+                    </ul>
+                </div>
+                <div class="mission-card">
+                    <h2>Our Mission <span class="emoji">🎯</span></h2>
+                    <p>Our goal is simple - build and fund the next generation of the best Roblox experiences.
+                        Whether you're a developer looking for investment or a game creator searching for management and support, we're here to help you
+                        succeed!</p>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h2>How to Get Involved <span class="emoji">📨</span></h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Developers 👨‍💻</h3>
+                        <p>Pitch your project in to have a chance at an investment.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Entrepreneurs 🧠</h3>
+                        <p>Learn, connect, and grow within a community of game-changers.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Game Scouter 🎨</h3>
+                        <p>Explore opportunities which have a chance at becoming the next major Roblox success.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>We’re here to take Roblox game development to the NextLvl!</h2>
+                <div class="journey-content">
+                    <h3>🔍 What We’re Investing In:</h3>
+
+                    <ul>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <h3>Near-Release or Just-Released Games</h3>
+                                <p>Games that are at launch or post-launch stage, needing an urgent ad campaign with marketing assistance.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h3>Pre-Algorithm Games</h3>
+                                <p>Games that are in their sponsoring campaign which already show good stats.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h3>Dipping Games</h3>
+                                <p>Previously successful games with dropping player stats, where strategic marketing can revive traction.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h3>Fixable Flops</h3>
+                                <p>Games with poor performance but with some smaller improvements, they could perform well.</p>
+                            </div>
+                        </div>
+                    </ul>
+                    <blockquote class="special-note">
+                        <b>Special note:</b> We are not budget-restricted; if the required budget exceeds average expectations, our team’s partners are ready to invest as well!
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Nextlvl Studios. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

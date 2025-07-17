@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Let's Create Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("SUA2NMSm1UejjOt8_"); // Replace this with your actual Public Key
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html" onclick="window.location.href='index.html'">Home</a></li>
+                <li><a href="aboutus.html" onclick="window.location.href='aboutus.html'">About Us</a></li>
+                <li><a href="experiences.html" onclick="window.location.href='experiences.html'">Experiences</a></li>
+                <li><a href="contact.html" class="contact" onclick="window.location.href = 'contact.html';">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-hero animate-slide-up">
+            <h1>Let's make something great together.</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <span class="service-dot"></span>
+                    <span>Comprehensive Marketing</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-dot"></span>
+                    <span>Game Investments</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-dot"></span>
+                    <span>Monetization Strategies</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-dot"></span>
+                    <span>Development Support</span>
+                </div>
+            </div>
+            <div class="contact-links">
+                <a href="aboutus.html" class="about-link">What more does NextLvl do?</a>
+            </div>
+        </section>
+
+        <section class="contact-form-section animate-slide-up" style="animation-delay: 0.3s;">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="username">Discord & Roblox Username</label>
+                    <input type="text" id="username" name="username" placeholder="Discord / Roblox" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="robloxplayer@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Game Investments" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="I'd like to learn how NextLvl can improve my experiences" required></textarea>
+                </div>
+                <div class="form-footer">
+                    <p class="alternative-contact">Or just join our <a href="https://discord.gg/3vfhWErJ"><u>Discord Server!</u></a></p> <!-- CHANGE TO LINK FOR DISCORD SERVER!!!! -->
+                    <button type="submit" class="send-message-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="aboutus.html">About Us</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="index.html">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 NextLvl Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
